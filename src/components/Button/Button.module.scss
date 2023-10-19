@@ -1,0 +1,76 @@
+.wrapper {
+    --background-button: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    display: inline-flex;
+    position: relative;
+    min-width: 212px;
+    min-height: 58px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white-color);
+    border-radius: 999px;
+    background: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+        border-color: transparent;
+        background: var(--background-button);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        border: 1px solid var(--background-button);
+        border-radius: inherit;
+        z-index: -1;
+        opacity: 0.2;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    &.active {
+        cursor: pointer;
+        border-color: transparent;
+        background: var(--background-button);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.link {
+    border: none;
+    outline: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    min-width: unset;
+    min-height: unset;
+
+    &::after {
+        content: unset;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+        background: transparent;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+    }
+
+    &.active {
+        background: transparent;
+        color: var(--primary-color);
+    }
+}

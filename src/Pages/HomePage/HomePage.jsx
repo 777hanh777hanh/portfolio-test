@@ -1,10 +1,19 @@
+import Header from '../../components/Header/Header';
 import { useClassNames } from '../../hooks';
 import styles from './HomePage.module.scss';
 
 const HomePage = () => {
     const cx = useClassNames(styles);
 
-    return <h1 className={cx('inner')}>Hello Guys!</h1>;
+    return (
+        <>
+            <section className={cx('homePage')}>
+                <div className={cx('inner')}>
+                    <Header />
+                </div>
+            </section>
+        </>
+    );
 };
 
 export default HomePage;
