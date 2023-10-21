@@ -9,7 +9,7 @@
     --primary-color: #21daf4;
     --secondary-color: #41e39a;
     --background-color: #171b1e;
-    --text-color: #6b7a7d;
+    --text-color: #8f9a9c;
     --title-color: #effbfe;
     --white-color: #fff;
 
@@ -65,4 +65,16 @@ input,
 a {
     color: var(--text-color);
     text-decoration: none;
+}
+
+.section-heading {
+    color: var(--white-color);
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.section-desc {
+    color: var(--text-color);
+    line-height: 1.15;
 }
