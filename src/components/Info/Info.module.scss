@@ -1,0 +1,33 @@
+// Info
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    .title {
+        font-size: 24px;
+        color: var(--primary-color);
+        line-height: 1.5;
+    }
+
+    .heading {
+        margin-top: 20px;
+        font-size: 48px;
+        line-height: 1.5;
+        color: var(--white-color);
+    }
+
+    .desc {
+        line-height: 1.5;
+        margin-top: 20px;
+        font-size: 16px;
+        max-width: 400px;
+    }
+
+    .download {
+        margin-top: 30px;
+        width: 200px;
+        max-width: 100%;
+    }
+}

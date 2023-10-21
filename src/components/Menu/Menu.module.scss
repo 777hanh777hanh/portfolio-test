@@ -1,0 +1,18 @@
+// Menu
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    padding: 6px 12px;
+    white-space: nowrap;
+
+    &:first-of-type {
+        padding-left: 0;
+    }
+}
+
+.link + .link {
+    margin-left: 23px;
+}
